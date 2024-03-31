@@ -1,0 +1,63 @@
+{
+  "name": "@reef-knot/ui-react",
+  "version": "1.0.8",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./styled-wrapper": "./dist/utils/styledWrapper.js"
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "dist/index.d.ts"
+      ],
+      "styled-wrapper": [
+        "dist/utils/styledWrapper.d.ts"
+      ]
+    }
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lidofinance/reef-knot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lidofinance/reef-knot.git",
+    "directory": "packages/ui-react"
+  },
+  "bugs": {
+    "url": "https://github.com/lidofinance/reef-knot/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "dev=on rollup -c -w",
+    "lint": "eslint --ext ts,tsx,js,mjs ."
+  },
+  "dependencies": {
+    "react-transition-group": "4",
+    "use-callback-ref": "1.2.5"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "react-is": ">=18",
+    "styled-components": "5",
+    "wagmi": "^0.12.19"
+  },
+  "devDependencies": {
+    "@types/react-transition-group": "4.4.2",
+    "eslint-config-custom": "*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-is": "18.2.0",
+    "styled-components": "^5.3.6",
+    "wagmi": "^0.12.19"
+  }
+}

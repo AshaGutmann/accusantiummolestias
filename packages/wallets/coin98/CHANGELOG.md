@@ -1,0 +1,13 @@
+# @reef-knot/wallet-adapter-coin98
+
+## 1.0.1
+
+### Patch Changes
+
+- Add custom connectors for injected wallets, which fixes an issue with autoconnection after page reload.
+
+## 1.0.0
+
+### Minor Changes
+
+- e2074ed: Make Coin98 wallet to use Wallet Adapter API
